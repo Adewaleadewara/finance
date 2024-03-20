@@ -67,7 +67,7 @@ input_var['marital_status'] = mariStatus.transform(input_var[['marital_status']]
 
 # st.dataframe(input_var)
 
-model = joblib.load('Finance.pkl')
+model = joblib.load('finance.pkl')
 prediction = model.predict(input_var)
 
 if st.button('ACTIVE BANK ACCOUNT'):
